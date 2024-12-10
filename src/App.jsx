@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-import './tailwind.css'
-import './style.css'
-import Navbar from './Components/Navbar'
-import Content from './Components/Content'
-import Content2 from './Components/Content2'
-import Footer from './Components/Footer'
-=======
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import "./tailwind.css";
@@ -21,16 +13,11 @@ import Signup from "./Components/pages/Signup";
 import RequestForm from "./Components/pages/RequestForm";
 import Verification from "./Components/pages/Verification";
 import LoginForm from "./Components/pages/LoginForm";
->>>>>>> origin/main
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-<<<<<<< HEAD
-      <Content />
-      <Content2 />
-=======
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
@@ -49,7 +36,6 @@ function App() {
         <Route path="/donor-login" element={<Login />} />
         <Route path="/LoginForm" element={<LoginForm />} />
       </Routes>
->>>>>>> origin/main
       <Footer />
     </div>
   );
