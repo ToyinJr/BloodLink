@@ -114,7 +114,7 @@ export const Navbar = () => {
       </ul>
 
       <div ref={modalLoginRef} className={`pt-10 md:absolute top-[40vh] mx-5 md:right-[30vh] lg:right-[80vh] ${modalLogin? "hidden" : "block"}`}>
-          <div className="Sign-options-container bg-[#8b0a19fa] w-fit p-4 rounded-lg place-self-center">
+          <div className="Sign-options-container bg-[#8b0a192f] w-fit p-4 rounded-lg place-self-center">
       <div className="Sign-option">
         <Link reloadDocument to="/LoginForm" className="Login-link">
           <div className="link-content">
