@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:wght@700&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
+
+/* "Rethink Sans", sans-serif */
+
+.container {
+  margin: 2em;
+  background-color: #8b0a1a1a;
+  padding: 1em;
+  border-radius: 5px;
+}
+.header {
+  margin-block-end: 1em;
+  font-weight: 700;
+  font-family: "Lora", serif;
+}
+.timestamp {
+  font-weight: 700;
+  font-family: "Rethink Sans", sans-serif;
+  margin-block: 0.7em;
+}
+.location {
+  font-family: "Lora", serif;
+  font-size: 0.5rem;
+  margin-block: 0.7em;
+}
+.donation {
+  font-family: "Lora", serif;
+  font-size: 0.5rem;
+  margin-block: 0.7em;
+}
+.btnPending {
+  color: #404040;
+  border: 1px solid #404040;
+  border-radius: 5px;
+  padding: 0.2em 0.4em;
+  font-size: 0.7rem;
+  font-family: "Rethink Sans", sans-serif;
+}
+
+.appointmentContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+.appointment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 45%;
+  background-color: #ffffff;
+  padding: 1em;
+  border-radius: 5px;
+}
+.btnPending {
+  align-self: flex-start;
+  margin-block-start: 1.5em;
+}
+
+@media (max-width: 768px) {
+  .appointment {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    background-color: #ffffff;
+    padding: 1em;
+    border-radius: 5px;
+    margin: 0 auto;
+  }
+  .header {
+    margin-inline-start: 0.5em;
+    font-weight: 700;
+    font-family: "Lora", serif;
+  }
+  .btnPending {
+    align-self: flex-end;
+  }
+}

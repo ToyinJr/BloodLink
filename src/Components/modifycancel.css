@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
+
+/* "Rethink Sans", sans-serif; */
+.modifyCancelContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.modifyCancelContainer .modifyBtn {
+  width: fit-content;
+  padding: 1em 2em;
+  margin-inline-start: 0.5em;
+  margin-block-start: 3em;
+  font-family: "Rethink Sans", sans-serif;
+  background-color: #008000;
+  font-size: 0.7em;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.modifyCancelContainer .cancelBtn {
+  width: fit-content;
+  padding: 1em 2em;
+  margin: 0.2em 0.5em;
+  font-size: 0.7em;
+  background-color: transparent;
+  color: #404040;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-family: "Rethink Sans", sans-serif;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .modifyCancelContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block-start: 3em;
+  }
+  .modifyCancelContainer .modifyBtn,
+  .modifyCancelContainer .cancelBtn {
+    width: 100%;
+    margin-block: 0.5em;
+    margin-inline: 0;
+  }
+}

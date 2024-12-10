@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:wght@700&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
+
+.container {
+  margin: 2em;
+}
+.header {
+  font-weight: 700;
+  font-size: 2.5rem;
+  width: 80%;
+  margin-block-end: 0.5em;
+  color: #404040;
+  font-family: "Lora", serif;
+}
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 5px;
+}
+.image {
+  object-fit: cover;
+  width: 100%;
+}
+.stats {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #8b0a1a;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 1.5em;
+  font-weight: 700;
+}
+.paragraphStat {
+  font-weight: normal;
+  font-family: "Lora", serif;
+}
+.percentage {
+  font-family: "Lora", serif;
+}
+.headerText {
+  font-size: 1rem;
+  margin-block-end: 1.5em;
+  color: #404040;
+  width: 50%;
+  font-family: "Lora", serif;
+}
+
+@media (max-width: 768px) {
+  .header {
+    font-weight: 700;
+    font-size: 1rem;
+    width: 95%;
+    margin-block-end: 1em;
+    color: #404040;
+  }
+
+  .headerText {
+    font-size: 0.8rem;
+    margin-block-end: 1.5em;
+    color: #404040;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .imageWrapper {
+    position: relative;
+    width: 100%;
+    height: 20em;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  .image {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+  }
+}

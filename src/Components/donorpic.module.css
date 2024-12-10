@@ -1,0 +1,19 @@
+.imageWrapper {
+  margin: 3em 0;
+  max-width: 35%;
+  flex: 1;
+  margin: 0 auto;
+}
+
+image {
+  object-fit: cover;
+  max-width: 100%;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .imageWrapper {
+    margin: 2em 0;
+    max-width: 95%;
+  }
+}

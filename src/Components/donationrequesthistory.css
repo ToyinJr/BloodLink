@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
+
+/* "Rethink Sans", sans-serif */
+
+.donationContainer {
+  width: 100%;
+}
+
+.requestHistory {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.requestStats {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #8b0a1a;
+  margin-inline: 0.7em;
+}
+
+.requestHistory > p {
+  color: #8b0a1a;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-align: start;
+  align-self: flex-start;
+  font-family: "Rethink Sans", sans-serif;
+}
+
+.searchWrapper {
+  width: 95%;
+  font-family: "Rethink Sans", sans-serif;
+  margin-block: 0.7em;
+}
+div > input[type="search"] {
+  align-items: flex-start;
+  text-align: start;
+  width: 100%;
+  font-size: 0.5rem;
+  color: #706f6f66;
+  background-color: #ffffff;
+  border-radius: 3px;
+  padding: 0.5em 1em;
+}
+
+.tableWrapper {
+  width: 95%;
+  margin-block-end: 1em;
+}
+
+.tableWrapper > table {
+  width: 100%;
+}
+
+td,
+tr,
+th {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: center;
+  font-family: "Rethink Sans", sans-serif;
+  color: #ffffff;
+  font-size: 0.5rem;
+  padding: 0.3em 0.5em;
+}
+
+th {
+  background-color: #008000;
+}
+
+@media (max-width: 768px) {
+  .donationContainer {
+    margin-block: 0.1em;
+  }
+  .requestStats {
+    display: flex;
+    flex-direction: column;
+    background-color: #8b0a1a;
+    margin-inline: 0.7em;
+  }
+  .requestHistory{
+    justify-content: space-between;
+  }
+  .tableWrapper {
+    width: 100%;
+    margin-block-end: 0.3em;
+  }
+  td,th{
+    font-size: 0.3rem;
+  }
+}

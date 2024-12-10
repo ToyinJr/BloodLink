@@ -1,0 +1,164 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the content */
+  text-align: left; /* Ensures centered text alignment */
+  padding: 20px;
+  background-color: #f5f5f5; /*Set a background color for contrast */
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px; /* image  on larger screens */
+  display: flex;
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers the content vertically */
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover; /* image covers the container without distortion */
+}
+
+.image-text {
+  position: absolute;
+  font-family: 'Lora', serif; /*  font is imported if you're using it */
+  font-weight: 700;
+  font-size: 55px;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /*  adds shadow for better readability */
+  padding: 10px;
+  font-size: calc(2vw + 20px); /* Responsive font size */
+  line-height: 1.2;
+  max-width: 90%; /* Prevents text from overflowing */
+}
+
+.additional-text {
+  margin-top: 20px; /* Adds space between the image and the additional text */
+  font-family: 'Rethink Sans', sans-serif; /* use any font */
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #333; /* color of the text */
+  max-width: 800px; /* Limits the width of the text */
+}
+
+@media (max-width: 768px) {
+  .image-text {
+    font-size: calc(3vw + 15px); /* font size for smaller screens */
+  }
+  .additional-text {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-text {
+    font-size: calc(4vw + 10px); /* adjust font size for very small screens */
+  }
+  .additional-text {
+    font-size: 15px;
+    font-weight: 400;
+  }
+}
+
+.about-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.image-container {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.additional-text {
+  margin: 20px 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.values-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.value-item {
+  flex: 1;
+  margin: 0 15px;
+  text-align: left;
+}
+
+.value-item h2 {
+  font-size: 31px;
+  font-family: 'Lora', serif; /* Font family */
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.value-item p {
+  font-size: 20px;
+  font-Family: "'Rethink Sans', sans-serif";
+  font-weight: 500;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.values-section .value-item:nth-child(2) {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  padding: 0 15px;
+}
+.values-section .value-item:nth-child(2) {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  padding: 0 15px;
+}
+
+/* Media query to hide the line on smaller screens */
+@media (max-width: 768px) { 
+  .values-section {
+    flex-direction: column; /* the items vertically on smaller screens */
+  }
+
+  .values-section .value-item:nth-child(2) {
+    border-left: none; /* Remove the borders on smaller screens */
+    border-right: none;
+    padding: 0; /*  Adjust padding for smaller screens */
+  }
+  .image-text {
+      font-size: calc(4vw + 10px); /* Adjust font size for very small screens */
+      white-space: nowrap; /* Keeps the text on a single line */
+      text-align: center;
+    }
+  
+}
+

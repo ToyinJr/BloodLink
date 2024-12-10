@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
+
+/* "Rethink Sans", sans-serif */
+
+.parentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2em;
+}
+.canDonate {
+  margin-block: 2em;
+  padding-inline: 0.5em;
+  align-self: flex-start;
+  font-family: "Rethink Sans", sans-serif;
+}
+.p {
+  font-size: .7rem;
+  margin: 0.5em;
+  font-family: "Rethink Sans", sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #8b0a1a;
+}
+.separator {
+  border: 2px solid #ffffff;
+}
+.separatorFirst {
+  border: 2px solid #ffffff;
+  width: 80%;
+}
+.sectionContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 2em;
+  margin: 1.5em;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+}
+.sectionHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  color: #ffffff;
+  padding-block-end: 1.5em;
+}
+.radioBtnWrapper {
+  display: flex;
+  gap: 0.5em;
+  width: 100%;
+  margin-block: 1em;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  padding: 0.5em;
+}
+
+.radio {
+  accent-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.label {
+  font-family: "Rethink Sans", sans-serif;
+}
+.btn {
+  background-color: green;
+  color: #ffffff;
+  width: fit-content;
+  padding: 0.5em 1.5em;
+  border-radius: 5px;
+  font-size: 0.7rem;
+  margin: 1em;
+  align-self: center;
+  font-family: "Rethink Sans", sans-serif;
+}
+.btnAddFile {
+  background-color: green;
+  color: #ffffff;
+  width: fit-content;
+  padding: 1em;
+  border-radius: 5px;
+  margin-block-start: 1em;
+  font-family: "Rethink Sans", sans-serif;
+}
+.uploadContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+}
+
+@media (max-width: 768px) {
+  .btnAddFile {
+    display: none;
+  }
+}
+
+@media (max-width: 768px){
+  .sectionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 2em;
+    margin: 1.5em;
+  }
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+  }
+}

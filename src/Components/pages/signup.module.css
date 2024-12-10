@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
+
+.container {
+  max-width: 40%;
+  margin: 0 auto;
+  font-family: "Rethink Sans", sans-serif;
+  flex: 2;
+}
+.p {
+  font-family: "Rethink Sans", sans-serif;
+  font-size: 0.8rem;
+}
+
+.a {
+  font-family: "Rethink Sans", sans-serif;
+  font-size: 0.6rem;
+  align-self: flex-end;
+}
+.span {
+  color: #b0b0b0;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1em;
+}
+.input,
+.select {
+  border: 1px solid #c4c2c2;
+  border-radius: 5px;
+  color: #404040;
+  padding: 1em 3em;
+  outline: none;
+  font-family: "Rethink Sans", sans-serif;
+  font-size: 0.7rem;
+}
+.btn {
+  background-color: #008000;
+  padding: 1em 3em;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: "Rethink Sans", sans-serif;
+  font-size: 0.7rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+    font-family: "Rethink Sans", sans-serif;
+  }
+}

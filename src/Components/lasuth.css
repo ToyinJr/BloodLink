@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
+
+/* "Rethink Sans", sans-serif */
+
+.lasuth {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #8b0a1a;
+  padding: 1em;
+  width: 90%;
+  border-radius: 5px;
+}
+
+.generalInfoContainer{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lasuth > div:first-child p {
+  text-align: center;
+  color: #ffffff;
+}
+.lasuth p {
+  color: #ffffff;
+  font-family: "Rethink Sans", sans-serif;
+}
+.infoMain {
+  display: flex;
+  flex-direction: column;
+}
+.infoMain .data {
+  display: flex;
+  gap: 2em;
+}
+.infoMain .data p:first-child {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.infoMain .data p {
+  margin-block: 0.5em;
+  font-family: "Rethink Sans", sans-serif;
+  font-size: 0.5em;
+}
+.lasuthName {
+  margin-block-start: 4.5em;
+  font-size: 0.7rem;
+}
+.generalInfo {
+  margin-block: 1em;
+  font-size: 0.5em;
+  align-self: flex-start;
+}
+.lasuthName #clinic {
+  color: rgba(255, 255, 255, 0.7);
+}
+.lasuthImageWrapper {
+  position: absolute;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.lasuthImageWrapper img {
+  border-radius: 50%;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .lasuth {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #8b0a1a;
+    padding: 0.5em;
+    width: 100%;
+    border-radius: 5px;
+  }
+  .generalInfo {
+  }
+}
